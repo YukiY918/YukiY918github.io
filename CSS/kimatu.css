@@ -1,0 +1,34 @@
+@charset "utf-8";
+
+ul > li:hover {
+    font-size: 2em;
+}
+
+#saidaishou_cal_result {
+    background-color: #99FF99;
+}
+
+#shisoku_cal_result {
+    background-color: #99FF99;
+}
+
+#shisuu_cal_result {
+    background-color: #99FF99;
+}
+
+#sosuu_cal_result_1 {
+    background-color: #99FF99;
+}
+
+#sosuu_cal_result_2 {
+    background-color: #99FF99;
+}
+
+.cent {
+    font-size: 15pt;
+    color: #FF3333;
+}
+
+#main-h1 {
+    color: #FF3333
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="/kimatu/CSS/kimatu.css">
+    <title>指数・対数</title>
+</head>
+
+<body>
+    <header>
+        <h1>指数・対数</h1>
+    </header>
+
+    <p class="cent">このページでは指数・対数に関する計算を行います。</p>
+
+
+    <form action="javascript:void(0)" method="get">
+        <p><label>1つめの数 (a):
+                <input type="number" name="shisuu_a" id="shisuu_num_a" required /></label>
+        </p>
+
+        <p>
+
+            <label>2つめの数 (b):
+                <input type="number" name="shisuu_b" id="shisuu_num_b" /></label>
+        </p>
+
+        <p>
+            <input type="submit" onclick="shisuu_cal(shisuu_a.value,shisuu_b.value,0)" value="累乗(a^b)" />
+            <input type="submit" onclick="shisuu_cal(shisuu_a.value,0,1)" value="平方根(√a)" />
+            <input type="submit" onclick="shisuu_cal(shisuu_a.value,0,2)" value="立方根(3√a)" />
+            <input type="submit" onclick="shisuu_cal(shisuu_a.value,0,3)" value="自然対数(log_e(a))" />
+            <input type="submit" onclick="shisuu_cal(shisuu_a.value,0,4)" value="常用対数(log10(a))" />
+        </p>
+
+        <div class="result">計算結果</div>
+        <div id="shisuu_cal_result"></div>
+
+    </form>
+
+    <a href="#top">トップへ戻る</a>
+    <a href="/kimatu/main.html">メインページへ戻る</a>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="/kimatu/js/enzan.js"></script>
+    <script src="/kimatu/js/jQuery.js"></script>
+    <footer>
+        Copyright &copy; Yuki Yamakawa.
+    </footer>
+</body>
+
+</html>

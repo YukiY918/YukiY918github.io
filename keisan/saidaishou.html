@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="/kimatu/CSS/kimatu.css">
+    <title>最大公約数・最小公倍数</title>
+</head>
+
+<body>
+    <header>
+        <h1>最大公約数・最小公倍数</h1>
+    </header>
+
+    <p class="cent">このページでは入力された数の最大公約数・最小公倍数を求めます。</p>
+
+    <form action="javascript:void(0)" method="get">
+        <p><label>1つめの数 (a):
+                <input type="number" name="saidaishou_a" id="saidaishou_num_a" required /></label>
+        </p>
+
+        <p>
+
+            <label>2つめの数 (b):
+                <input type="number" name="saidaishou_b" id="saidaishou_num_b" required /></label>
+        </p>
+
+        <p>
+            <input type="submit" onclick="saidaishou(saidaishou_a.value,saidaishou_b.value,0)" value="最大公約数" />
+            <input type="submit" onclick="saidaishou(saidaishou_a.value,saidaishou_b.value,1)" value="最小公倍数" />
+        </p>
+
+
+        <div class="result">計算結果</div>
+        <div id="saidaishou_cal_result"></div>
+
+    </form>
+
+    <a href="#top">トップへ戻る</a>
+    <a href="/kimatu/main.html">メインページへ戻る</a>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="/kimatu/js/enzan.js"></script>
+    <script src="/kimatu/js/jQuery.js"></script>
+    <footer>
+        Copyright &copy; Yuki Yamakawa.
+    </footer>
+</body>
+
+</html>

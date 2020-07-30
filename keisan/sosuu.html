@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="/kimatu/CSS/kimatu.css">
+    <title>素数</title>
+</head>
+
+<body>
+    <header>
+        <h1>素数</h1>
+    </header>
+
+    <p class="cent">このページでは入力された数が素数であるかの判定や、素因数分解等を行います。</p>
+
+    <form action="javascript:void(0)" method="get">
+        <p><label>使用する数 (a):
+                <input type="number" name="sosuu" id="sosuu_num_a" required /></label>
+        </p>
+
+
+        <p>
+            <input type="submit" onclick="sosuu_cal(sosuu.value,0)" value="aの素数判定" />
+            <input type="submit" onclick="sosuu_cal(sosuu.value,1)" value="aの素因数分解" />
+        </p>
+
+        <div class="result">計算結果</div>
+        <div id="sosuu_cal_result_1"></div>
+
+        <p>-------------------------------------------------------------------------------</p>
+        <p>
+            <input type="submit" onclick="sosuu_cal(sosuu.value,2)" value="a以下の素数の表示" />
+        </p>
+        <div class="result">計算結果</div>
+        <div id="sosuu_cal_result_2"></div>
+
+        <p>-------------------------------------------------------------------------------</p>
+
+    </form>
+
+    <a href="#top">トップへ戻る</a>
+    <a href="/kimatu/main.html">メインページへ戻る</a>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="/kimatu/js/enzan.js"></script>
+    <script src="/kimatu/js/jQuery.js"></script>
+    <footer>
+        Copyright &copy; Yuki Yamakawa.
+    </footer>
+</body>
+
+</html>
